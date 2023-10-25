@@ -1,0 +1,53 @@
+<!-- // 15th question//
+
+// AJAX Post Request:
+
+
+// a. Implement a JavaScript function that sends an AJAX POST request to the following URL: "https://api.example.com/submit".
+
+
+// b. Send a JSON payload with the following data: { "name": "John Doe", "email": "johndoe@example.com" }.
+
+
+// Answer to the 15th question// -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Query Selector Example</title>
+  
+</head>
+<body>
+
+
+  <button onclick="postreq()">Click</button>
+  <script>
+  
+  function postreq(){
+  
+  let URL="https://api.example.com/submit"
+  let bodydata= { "name": "John Doe", "email": "johndoe@example.com" }
+  
+  let config ={
+      method:"POST",
+      Headers:{'Accept':'aplication/json','Content-Type':'application/json'},
+      body:JSON.stringify(bodydata)
+  
+  }
+  
+  fetch(URL,config)
+  .then(Response=>Response.jeson())
+  .then(result=>console.log(result))
+  .catch(err=>console.log(err))
+  
+  
+  
+  
+  }
+  
+  
+  </script>
+  
+  </body>
+  
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ansewer To the 1st question//
+
+// (1) Create a function that takes a date in the format "YYYY-MM-DD" as a parameter and returns the day of the week for that date. The function should use the Date object.
+
+function getCurrentDayOfWeek() {
+  var currentDate = new Date();
+  var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var dayOfWeek = daysOfWeek[currentDate.getDay()];
+  return dayOfWeek;
+}
+
+
+
+//  b. Implement the function to display the day of the week for the current date:
+
+var currentDayOfWeek = getCurrentDayOfWeek();
+console.log(currentDayOfWeek);
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- // 7th question//
+
+// JS Common Events:
+
+
+// Implement a webpage with the following functionality:
+
+
+// a. When the user clicks anywhere on the page, display an alert with the coordinates (x, y) of the click.
+
+
+// b. When the user presses any key on the keyboard, display an alert with the key code of the pressed key.
+
+
+// c. When the user moves the mouse over an image, change the image source to another image of your choice
+
+// Answer to the 7th question// -->
+
+ 
+<!DOCTYPE html>
+ 
+  <html>
+ 
+  <head>
+ 
+    <title>Interactive Webpage</title>
+
+ 
+</head>
+ 
+  <body onclick="handleClick(event)" onkeypress="handleKeyPress(event)">
+ 
+    <h1>Interactive Webpage</h1>
+ 
+    <img id="myImage" src="path_to_image.jpg" onmouseover="changeImage()">
+ 
+ <script>
+    // Function to display alert with click coordinates
+    function handleClick(event) {
+      var x = event.clientX;
+      var y = event.clientY;
+      alert("Clicked at coordinates (x, y): " + x + ", " + y);
+    }
+    
+    // Function to display alert with key code
+    function handleKeyPress(event) {
+      var keyCode = event.keyCode || event.which;
+      alert("Key pressed. Key code: " + keyCode);
+    }
+    
+    // Function to change image source on mouseover
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      image.src = "path_to_another_image.jpg"; // Replace with the path to your desired image
+    }
+  </script>
+ </body >
+  </html>

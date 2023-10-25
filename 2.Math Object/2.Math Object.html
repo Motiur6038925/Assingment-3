@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Ansewer To the 2nd question//
+
+  // a. Write a JavaScript function that takes an array of numbers as input and returns the square root of the sum of squares of all the numbers. Use the Math object to perform the necessary calculations.?
+
+  function squareRootOfSumOfSquares(numbers) {
+    var sumOfSquares = 0;
+    
+    for (var i = 0; i < numbers.length; i++) {
+      sumOfSquares += Math.pow(numbers[i], 2);
+    }
+    
+    var result = Math.sqrt(sumOfSquares);
+    return result;
+  }
+
+  //b. implement the function to display the square root of the sum of squares for an array of numbers....
+
+var numbers = [3, 4, 5];
+var result = squareRootOfSumOfSquares(numbers);
+console.log(result);
+
+    </script>
+</body>
+</html>

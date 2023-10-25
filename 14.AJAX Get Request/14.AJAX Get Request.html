@@ -1,0 +1,40 @@
+<!-- // 14th question//
+
+// AJAX Get Request:
+
+
+// a. Implement a JavaScript function that sends an AJAX GET request to the following URL: "https://api.example.com/data".
+
+//Answer to the 14th question// -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Query Selector Example</title>
+  
+</head>
+<body>
+
+
+  <button onclick="GetReq()">Click</button>
+  <script>
+  
+  function GetReq() {
+  
+      let URL = "https://api.example.com/data"
+      let config = {method:"GET"};
+  
+      fetch(URL,config)
+      .then(response=>response.json())
+      .then(result=>console.log(result))
+      .catch(err=>console.log(err))
+  
+  
+  }
+  
+  
+  </script>
+  
+  </body>
+  
+</html>

@@ -1,0 +1,44 @@
+<!-- // 13th question//
+
+// DOM Query Selector:
+
+
+// a. Create a webpage with multiple paragraphs containing different classes and IDs.
+
+
+// b. Implement a JavaScript function that selects all paragraphs with a specific class and changes their text color to red.
+
+// Answer to the 13th question// -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Query Selector Example</title>
+  
+</head>
+<body>
+  
+  <p class="class1">This is a paragraph with class "class1".</p>
+  <p class="class2">This is a paragraph with class "class2".</p>
+  
+  <p id="id1">This is another paragraph with class "id1".</p>
+  
+  <p id="id2">This is another paragraph with class "id2".</p>
+  <button onclick="changeTextColor()">Click</button>
+
+  <script>
+    function changeTextColor() {
+      // Select all paragraphs with different classes and ids.
+      var specialParagraphs = document.querySelectorAll("#id1,#id2,.class1,.class2");
+
+      // Change the text color of selected paragraphs to red
+      for (var i = 0; i < specialParagraphs.length; i++) {
+        specialParagraphs[i].style.color = "red";
+      }
+    }
+
+  
+    
+  </script>
+</body>
+</html>
